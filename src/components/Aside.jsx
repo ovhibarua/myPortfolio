@@ -5,7 +5,7 @@ import eng from "../../src/assets/united-kingdom.png";
 import hindi from "../../src/assets/india.png";
 function Aside() {
   return (
-    <div className="w-84 p-8 bgImage ">
+    <div className="w-84 p-8 bgImage">
       <div className="pb-8 border-b-[1px] border-[#393E4E] mb-8">
         <div className="overflow-hidden rounded-full w-30 h-30 mb-6">
           <Image addImg={avater} />
