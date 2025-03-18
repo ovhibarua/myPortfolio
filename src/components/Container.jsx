@@ -12,13 +12,17 @@ import boot from "../assets/Bootstrap.png";
 import uniLogo from "../assets/premier_logo.png";
 import collageLogo from "../assets/collage.png";
 import schoolLogo from "../assets/schoolLogo.png";
+import thumb1 from "../../src/assets/thumb1.png";
+import thumb2 from "../../src/assets/thumb2.png";
+import thumb3 from "../../src/assets/thumb3.png";
+import thumb4 from "../../src/assets/thumb4.png";
 
 function Container() {
   return (
     <div className="px-8 py-20">
       <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
         <h2 className="mb-6">About Me</h2>
-        <div className="box bg-[#2E2E48]">
+        <div>
           <p>
             As a passionate front-end developer, I specialize in crafting
             visually appealing and user-friendly web experiences. With a strong
@@ -54,7 +58,7 @@ function Container() {
       </div>
       <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
         <h2 className="mb-6">Skills</h2>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 flex-wrap">
           <div className="bg-[#2E2E48] flex items-center gap-3 rounded-lg px-5 py-4">
             <span className="w-7 h-7 block">
               <Image addImg={react} />
@@ -186,7 +190,118 @@ function Container() {
           </li>
         </ul>
       </div>
+
       <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-6">Projects</h2>
+        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#C696FC"
+            className="w-4 h-4"
+          >
+            <path
+              d="m11.262 2.306c.196-.196.461-.306.738-.306s.542.11.738.306c1.917 1.917 7.039 7.039 8.956 8.956.196.196.306.461.306.738s-.11.542-.306.738c-1.917 1.917-7.039 7.039-8.956 8.956-.196.196-.461.306-.738.306s-.542-.11-.738-.306c-1.917-1.917-7.039-7.039-8.956-8.956-.196-.196-.306-.461-.306-.738s.11-.542.306-.738c1.917-1.917 7.039-7.039 8.956-8.956z"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </div>
+        <div className="grid grid-cols-3 gap-6">
+          <div className="bg-[#2E2E48] overflow-hidden rounded-xl">
+            <a href="https://yourbankcompany.netlify.app/" target="blank">
+              <div className="w-full h-fit">
+                <Image addImg={thumb1} />
+              </div>
+            </a>
+
+            <div className="p-4">
+              <p className="mb-3">Banking Company Website Template</p>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  React
+                </label>
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  Tailwind
+                </label>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#2E2E48] overflow-hidden rounded-xl">
+            <a href="https://teespaceweb.netlify.app/" target="blank">
+              <div className="w-full h-fit">
+                <Image addImg={thumb2} />
+              </div>
+            </a>
+
+            <div className="p-4">
+              <p className="mb-3">T-shirt Landing Page Template</p>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  React
+                </label>
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  Tailwind
+                </label>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#2E2E48] overflow-hidden rounded-xl">
+            <a href="https://etravels-o.netlify.app/" target="blank">
+              <div className="w-full h-fit">
+                <Image addImg={thumb3} />
+              </div>
+            </a>
+
+            <div className="p-4">
+              <p className="mb-3">Travels Website Template</p>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  Bootstrap
+                </label>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#2E2E48] overflow-hidden rounded-xl">
+            <a href="https://aonmarto.netlify.app/" target="blank">
+              <div className="w-full h-fit">
+                <Image addImg={thumb4} />
+              </div>
+            </a>
+
+            <div className="p-4">
+              <p className="mb-3">Aon mart Landing Page template</p>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <label
+                  className="py-1 px-3 rounded-full bg-blue-500 font-medium text-[12px]"
+                  htmlFor="label"
+                >
+                  Bootstrap
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pl-8 border-l-[1px] border-[#393E4E] relative">
         <h2 className="mb-6">Education</h2>
         <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
           <svg
