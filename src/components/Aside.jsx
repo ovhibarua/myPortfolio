@@ -5,8 +5,8 @@ import eng from "../../src/assets/united-kingdom.png";
 import hindi from "../../src/assets/india.png";
 function Aside() {
   return (
-    <div className="w-84 p-8 bgImage">
-      <div className="pb-8 border-b-[1px] border-[#393E4E] mb-8">
+    <div className="w-full md:w-84 px-4 py-8 sm:px-8 bgImage">
+      <div className="pb-8 border-b-[1px] border-[#393E4E] mb-8 flex flex-col items-center md:items-start">
         <div className="overflow-hidden rounded-full w-30 h-30 mb-6">
           <Image addImg={avater} />
         </div>
@@ -14,13 +14,13 @@ function Aside() {
         <h2 className="bg-gradient-to-r mb-6 from-[#A478E8] to-[#516CF7] bg-clip-text text-transparent">
           Front End Developer (React)
         </h2>
-        <h3 className="text-[#D9DFE8] leading-6">
+        <h3 className="text-[#D9DFE8] text-center md:text-start leading-6">
           "Code is my art, <br /> The web is my canvas."
         </h3>
       </div>
       <div className="pb-8 border-b-[1px] border-[#393E4E] mb-8">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="p-2.5 bg-[#2E2E48] inline-block overflow-hidden rounded-full">
+        <div className="flex justify-center md:justify-start items-center gap-3 mb-5">
+          <div className="p-2.5 bg-[#2E2E48] md:inline-block overflow-hidden rounded-full hidden ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -32,12 +32,14 @@ function Aside() {
             </svg>
           </div>
           <div>
-            <span className="text-[#ACB1C3]">Email</span>
+            <span className="text-[#ACB1C3] text-center md:text-start w-full block">
+              Email
+            </span>
             <p>ovhibarua1995@gmail.com</p>
           </div>
         </div>
-        <div className="flex items-center gap-3 mb-5">
-          <div className="p-2.5 bg-[#2E2E48] inline-block overflow-hidden rounded-full">
+        <div className="flex justify-center md:justify-start items-center gap-3 mb-5">
+          <div className="p-2.5 bg-[#2E2E48] hidden md:inline-block overflow-hidden rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -49,12 +51,14 @@ function Aside() {
             </svg>
           </div>
           <div>
-            <span className="text-[#ACB1C3]">Phone</span>
+            <span className="text-[#ACB1C3] text-center md:text-start block">
+              Phone
+            </span>
             <p>01627377020</p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-[#2E2E48] inline-block overflow-hidden rounded-full">
+        <div className="flex justify-center md:justify-start items-center gap-3">
+          <div className="p-2.5 bg-[#2E2E48] hidden md:inline-block overflow-hidden rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -66,36 +70,38 @@ function Aside() {
             </svg>
           </div>
           <div>
-            <span className="text-[#ACB1C3]">Address</span>
+            <span className="text-[#ACB1C3] block text-center md:text-start">
+              Address
+            </span>
             <p>Chittagong, Bangladesh</p>
           </div>
         </div>
       </div>
-      <div className="pb-8">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-10 h-10">
+      <div>
+        <div className="flex justify-center md:justify-start items-center gap-3 mb-5">
+          <div className="w-10 h-10 hidden md:block">
             <Image addImg={eng} />
           </div>
           <div>
-            <p>English</p>
+            <p className="text-center md:text-start">English</p>
             <span className="text-[#ACB1C3]">Professional working</span>
           </div>
         </div>
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-10 h-10">
+        <div className="flex justify-center md:justify-start items-center gap-3 mb-5">
+          <div className="w-10 h-10 hidden md:block">
             <Image addImg={bangla} />
           </div>
           <div>
-            <p>Bangla</p>
+            <p className="text-center md:text-start">Bangla</p>
             <span className="text-[#ACB1C3]">Professional working</span>
           </div>
         </div>
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10">
+        <div className="flex justify-center md:justify-start items-center gap-3">
+          <div className="w-10 h-10 hidden md:block">
             <Image addImg={hindi} />
           </div>
           <div>
-            <p>Hindi</p>
+            <p className="text-center md:text-start">Hindi</p>
             <span className="text-[#ACB1C3]">Professional working</span>
           </div>
         </div>

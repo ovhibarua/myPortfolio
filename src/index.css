@@ -15,7 +15,7 @@ body {
     background-size: cover;
   }
   .box {
-    @apply p-6 rounded-md;
+    @apply p-4 xl:p-6 rounded-md;
   }
 }
 

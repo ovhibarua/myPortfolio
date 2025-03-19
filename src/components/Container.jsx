@@ -19,11 +19,11 @@ import thumb4 from "../../src/assets/thumb4.png";
 
 function Container() {
   return (
-    <div className="px-8 py-20">
-      <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
-        <h2 className="mb-6">About Me</h2>
+    <div className="px-4 sm:px-8 py-8 md:py-20">
+      <div className="pl-0 sm:pl-8 pb-12 border-0 sm:border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-4 md:mb-6 text-center sm:text-start">About Me</h2>
         <div>
-          <p>
+          <p className="text-center sm:text-start">
             As a passionate front-end developer, I specialize in crafting
             visually appealing and user-friendly web experiences. With a strong
             foundation in HTML, CSS, and JavaScript, I thrive on turning
@@ -38,7 +38,7 @@ function Container() {
             creative problem-solving to every project.
           </p>
         </div>
-        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+        <div className="hidden p-2 rounded-full bg-[#2E2E48] sm:inline-block absolute top-[-5px] left-[-17px]">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -56,9 +56,9 @@ function Container() {
           </svg>
         </div>
       </div>
-      <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
-        <h2 className="mb-6">Skills</h2>
-        <div className="flex items-center gap-4 flex-wrap">
+      <div className="pl-0 sm:pl-8 pb-12 border-0 sm:border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-4 md:mb-6 text-center sm:text-start">Skills</h2>
+        <div className="flex justify-center sm:justify-start items-center gap-4 flex-wrap">
           <div className="bg-[#2E2E48] flex items-center gap-3 rounded-lg px-5 py-4">
             <span className="w-7 h-7 block">
               <Image addImg={react} />
@@ -102,7 +102,7 @@ function Container() {
             <p className="text-[#ACB1C3]">Bootstrap</p>
           </div>
         </div>
-        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+        <div className="hidden p-2 rounded-full bg-[#2E2E48] sm:inline-block absolute top-[-5px] left-[-17px]">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -120,9 +120,12 @@ function Container() {
           </svg>
         </div>
       </div>
-      <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
-        <h2 className="mb-6">Tools</h2>
-        <div className="flex items-center gap-4 mb-8">
+      <div className="pl-0 sm:pl-8 pb-12 border-0 sm:border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-4 lg:mb-6 text-center sm:text-start">Tools</h2>
+        <div
+          className="flex items-center gap-4 mb-8 justify-center
+         sm:justify-start"
+        >
           <div className="bg-[#2E2E48] flex items-center gap-3 rounded-lg px-5 py-4">
             <span className="w-7 h-7 block">
               <Image addImg={vsCode} />
@@ -136,7 +139,7 @@ function Container() {
             <p className="text-[#ACB1C3]">Figma</p>
           </div>
         </div>
-        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+        <div className="hidden p-2 rounded-full bg-[#2E2E48] sm:inline-block absolute top-[-5px] left-[-17px]">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -190,10 +193,9 @@ function Container() {
           </li>
         </ul>
       </div>
-
-      <div className="pl-8 pb-12 border-l-[1px] border-[#393E4E] relative">
-        <h2 className="mb-6">Projects</h2>
-        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+      <div className="pl-0 sm:pl-8 pb-12 border-0 sm:border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-4 md:mb-6 text-center sm:text-start">Projects</h2>
+        <div className="p-2 rounded-full bg-[#2E2E48] hidden sm:inline-block absolute top-[-5px] left-[-17px]">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -210,7 +212,7 @@ function Container() {
             />
           </svg>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <div className="bg-[#2E2E48] overflow-hidden rounded-xl">
             <a href="https://yourbankcompany.netlify.app/" target="blank">
               <div className="w-full h-fit">
@@ -301,9 +303,9 @@ function Container() {
           </div>
         </div>
       </div>
-      <div className="pl-8 border-l-[1px] border-[#393E4E] relative">
-        <h2 className="mb-6">Education</h2>
-        <div className="p-2 rounded-full bg-[#2E2E48] inline-block absolute top-[-5px] left-[-17px]">
+      <div className="pl-0 sm:pl-8 border-0 sm:border-l-[1px] border-[#393E4E] relative">
+        <h2 className="mb-4 md:mb-6 text-center sm:text-start">Education</h2>
+        <div className="p-2 rounded-full bg-[#2E2E48] hidden sm:inline-block absolute top-[-5px] left-[-17px]">
           <svg
             clip-rule="evenodd"
             fill-rule="evenodd"
@@ -320,45 +322,47 @@ function Container() {
             />
           </svg>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="box bg-[#2E2E48] flex gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="box bg-[#2E2E48] flex gap-3 xl:gap-5">
             <div className="w-16 h-16">
               <Image addImg={uniLogo} />
             </div>
             <div>
-              <h3 className="mb-5">Premier University</h3>
+              <h3 className="mb-2 xl:mb-3">Premier University</h3>
               <p>Master of Business Administration (MBA)</p>
               <span className="text-[#ACB1C3]">
                 Major: Human Resource Management (HRM)
               </span>
             </div>
           </div>
-          <div className="box bg-[#2E2E48] flex gap-5">
+          <div className="box bg-[#2E2E48] flex gap-3 xl:gap-5">
             <div className="w-16 h-16">
               <Image addImg={uniLogo} />
             </div>
             <div>
-              <h3 className="mb-5">Premier University</h3>
+              <h3 className="mb-2 xl:mb-3">Premier University</h3>
               <p>Bachelor of Business Administration (BBA)</p>
               <span className="text-[#ACB1C3]">Major: Management (MGT)</span>
             </div>
           </div>
-          <div className="box bg-[#2E2E48] flex gap-5">
+          <div className="box bg-[#2E2E48] flex gap-3 xl:gap-5">
             <div className="w-16 h-16">
               <Image addImg={collageLogo} />
             </div>
             <div>
-              <h3 className="mb-5">Dewan Hat City Corporation College</h3>
+              <h3 className="mb-2 xl:mb-3">
+                Dewan Hat City Corporation College
+              </h3>
               <p>Higher Secondary Certificate (HSC)</p>
               <span className="text-[#ACB1C3]">Major: Business Study</span>
             </div>
           </div>
-          <div className="box bg-[#2E2E48] flex gap-5">
+          <div className="box bg-[#2E2E48] flex gap-3 xl:gap-5">
             <div className="w-16 h-16 rounded-full overflow-hidden">
               <Image addImg={schoolLogo} />
             </div>
             <div>
-              <h3 className="mb-5">Khaja Ajmeri KG & High School</h3>
+              <h3 className="mb-2 xl:mb-3">Khaja Ajmeri KG & High School</h3>
               <p>Secondary School Certificate (SSC)</p>
               <span className="text-[#ACB1C3]">Major: Business Study</span>
             </div>
